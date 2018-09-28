@@ -7,7 +7,7 @@ The new async function will return `[err, res]`, like nodejs callback style.
 ## Example
 
 ```javascript
-import PromiseToAsync from 'PromiseToAsync';
+import PromiseToAsync from 'promise-to-async';
 
 (async () => {
     const [err, res] = await PromiseToAsync(somePromise);
