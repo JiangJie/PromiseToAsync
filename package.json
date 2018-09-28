@@ -1,6 +1,6 @@
 {
   "name": "promise-to-async",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert promise to async function.",
   "main": "index.js",
   "scripts": {
@@ -11,10 +11,10 @@
     "url": "git+https://github.com/JiangJie/PromiseToAsync.git"
   },
   "keywords": [
-      "Promise",
-      "async",
-      "nodejs",
-      "callback"
+    "Promise",
+    "async",
+    "nodejs",
+    "callback"
   ],
   "author": "jiang115jie@gmail.com",
   "license": "ISC",
