@@ -2,7 +2,7 @@
  * @description Convert promise to async function and return [err, res].
  * @date 2018-09-28
  * @export
- * @param {Promise} promise
+ * @param {Promise|any} promise promise to be converted
  * @returns {Array} [err, res]
  */
 const PromiseToAsync = async promise => {
