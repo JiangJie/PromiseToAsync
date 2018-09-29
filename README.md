@@ -14,6 +14,12 @@ Convert promise to async function.
 
 The new async function will return `[err, res]`, like nodejs callback style.
 
+## Install
+
+```javascript
+npm install promise-to-async --save
+```
+
 ## Example
 
 ```javascript
