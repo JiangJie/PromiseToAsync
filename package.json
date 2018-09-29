@@ -4,7 +4,8 @@
   "description": "Convert promise to async function.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-travis": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/JiangJie/PromiseToAsync#readme",
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "eslint": "^5.6.1",
     "jest": "^23.6.0"
   }
