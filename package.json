@@ -17,7 +17,7 @@
     "callback"
   ],
   "author": "jiang115jie@gmail.com",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/JiangJie/PromiseToAsync/issues"
   },
