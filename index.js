@@ -18,4 +18,4 @@ const PromiseToAsync = async promise => {
     return hasError ? [errOrRes] : [null, errOrRes];
 };
 
-export default PromiseToAsync;
+module.exports = PromiseToAsync;
