@@ -20,12 +20,28 @@ The new async function will return `[err, res]`, like nodejs callback style.
 import PromiseToAsync from 'promise-to-async';
 
 (async () => {
-    const [err, res] = await PromiseToAsync(somePromise);
+    const promise = Promise.resolve('promise resolved');
 
-    if (err) {
-        console.error(err);
-    }
+    const [err, res] = await PromiseToAsync(promise);
 
-    // do something with res
+    console.assert(err === null);
+    console.assert(res === 'promise resolved');
+})();
+```
+
+Or by inject.
+
+```javascript
+import PromiseToAsync from 'promise-to-async';
+// inject
+PromiseToAsync.injectAsyncMethod('two'); // method name default is two
+
+(async () => {
+    const promise = Promise.resolve('promise resolved');
+
+    const [err, res] = await promise.two();
+
+    console.assert(err === null);
+    console.assert(res === 'promise resolved');
 })();
 ```
