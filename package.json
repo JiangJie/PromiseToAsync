@@ -1,6 +1,6 @@
 {
   "name": "promise-to-async",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Convert promise to async function.",
   "main": "index.js",
   "scripts": {
@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/JiangJie/PromiseToAsync#readme",
   "devDependencies": {
-    "coveralls": "^3.0.2",
-    "eslint": "^5.6.1",
-    "jest": "^23.6.0"
+    "coveralls": "^3.0.3",
+    "eslint": "^5.15.1",
+    "jest": "^24.3.1"
   }
 }
