@@ -10,7 +10,7 @@
 
 [![NPM](https://nodei.co/npm/promise-to-async.png?downloads=true)](https://nodei.co/npm/promise-to-async/)
 
-Convert promise to async function.
+Convert promise or promisify function to async function.
 
 The new async function will return `[err, res]`, like nodejs callback style.
 
@@ -32,6 +32,24 @@ import PromiseToAsync from 'promise-to-async';
 
     console.assert(err === null);
     console.assert(res === 'promise resolved');
+})();
+
+(async () => {
+    const util = require('util');
+    const fs = require('fs');
+
+    const promise = util.promisify(fs.readdir)('/');
+
+    const [err, res] = await PromiseToAsync(promise);
+})();
+// same as
+(async () => {
+    const util = require('util');
+    const fs = require('fs');
+
+    const readdir = PromiseToAsync(util.promisify(fs.readdir));
+
+    const [err, res] = await readdir('/');
 })();
 ```
 
