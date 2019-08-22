@@ -15,7 +15,8 @@
     "Promise",
     "async",
     "nodejs",
-    "callback"
+    "callback",
+    "promisify"
   ],
   "author": "jiang115jie@gmail.com",
   "license": "GPL-3.0",
