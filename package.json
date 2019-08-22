@@ -1,6 +1,6 @@
 {
   "name": "promise-to-async",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert promise to async function.",
   "main": "index.js",
   "scripts": {
